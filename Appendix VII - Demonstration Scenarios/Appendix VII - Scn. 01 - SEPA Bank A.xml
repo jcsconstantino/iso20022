@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="template_modified.xsl"?>
+<PaymentBatch>
+  <PmtBatchDetails>
+    <PmtBatchCreationDate>2022-10-01T11:46:54</PmtBatchCreationDate>
+    <PmtBatchRef>B202200001</PmtBatchRef>
+    <PmtBatchUserRef>20221001SEPA</PmtBatchUserRef>
+    <BatchBooking>true</BatchBooking>
+    <PmtBatchUserComments>Test - Bank A SEPA, batch booking, unstructured remittance, 2 payments multiple docs</PmtBatchUserComments>
+    <BatchTotals>
+      <NumPayments>2</NumPayments>
+      <TotalAmount>550</TotalAmount>
+      <Total>
+        <Amount>550</Amount>
+        <Currency>EUR</Currency>
+      </Total>
+    </BatchTotals>
+  </PmtBatchDetails>
+  <GroupingElements>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <Payer>
+      <PayerName>Demo Company Name</PayerName>
+      <TaxID>Demo Tax ID</TaxID>
+      <PayerCompanyID>Demo Company ID</PayerCompanyID>
+      <PayerCompanyPrtry>Demo Company Code for Bank B</PayerCompanyPrtry>
+      <RegistrationCode>Organization Code</RegistrationCode>
+      <Address>
+        <AddressName>Payer Address Name</AddressName>
+        <AddLine1>Payer Address Line 1</AddLine1>
+        <AddLine2>Payer Address Line 2</AddLine2>
+        <AddLine3>Payer Address Line 3</AddLine3>
+        <City>Payer City</City>
+        <State>Payer State</State>
+        <PostalCode>Payer ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </Address>
+    </Payer>
+    <IntBankAccount>
+      <BankName>Bank A</BankName>
+      <BankNumber>Bank Number</BankNumber>
+      <BranchName>Branch Name</BranchName>
+      <BranchNumber>Branch Number</BranchNumber>
+      <BankAccountName>Bank A - EU</BankAccountName>
+      <BankAccountNumber>000000000000</BankAccountNumber>
+      <RoutingCode>
+        <ABA>021000021</ABA>
+        <CHIPS />
+        <RtgCode>123123</RtgCode>
+      </RoutingCode>
+      <BICSWIFT>XXXXPTXXXXX</BICSWIFT>
+      <IBAN>PT5000000000000000000000</IBAN>
+      <Currency>EUR</Currency>
+      <BankAddress>
+        <AddLine1>Payer Bank Address 1</AddLine1>
+        <AddLine2>Payer Bank Address 1</AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payer Bank City</City>
+        <State></State>
+        <PostalCode>Payer Bank ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </BankAddress>
+    </IntBankAccount>
+  </GroupingElements>
+  <PaymentDetail>
+    <GroupingTag>B202200001-1</GroupingTag>
+    <BatchBooking>true</BatchBooking>
+    <PmtDocumentNum>102200000001</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>SEPA</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>2</TotalPayments>
+    <TotalAmount>300</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 1</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 1</PayeeName>
+      <PayeeAltName1>Payee Alt Name Pmt 1</PayeeAltName1>
+      <TaxID>Payee Pmt 1 Tax ID</TaxID>
+      <PayeeType>Employee</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 1 Address 1</AddLine1>
+        <AddLine2>Payee Pmt 1 Address 2</AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 1 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 1 ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt1@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 1 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 1 Bank Number</BankNumber>
+      <BranchName>Payee Pmt 1 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT>PAYEEBICSWI</BICSWIFT>
+      <BranchNumber>Payee Pmt 1 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 1 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber></BankAccountNumber>
+      <IBAN>PT50111111111111111111111</IBAN>
+      <AccountType />
+      <RoutingCode>
+        <ABA />
+        <CHIPS />
+        <RtgCode />
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 1 Bank Address 1</AddLine1>
+        <AddLine2>Payee Pmt 1 Bank Address 2</AddLine2>
+        <AddLine3 />
+        <City>Payee Pmt 1 Bank City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 1 Bank ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>300</Value>
+      <Currency>EUR</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer>SHAR</ChargeBearer>
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>EUR</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning />
+      <DisplayValue />
+    </PurpPayment>
+    <TotalPayableDocs>2</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100024</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>Test invoice 1</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning />
+        <DisplayValue></DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>100.00</Value>
+        <Currency>EUR</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>100.00</Value>
+        <Currency>EUR</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>EUR</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+    <PayableDocuments>
+      <DocNumber>22/100025</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>Test invoice 2</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning />
+        <DisplayValue></DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>200.00</Value>
+        <Currency>EUR</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>200.00</Value>
+        <Currency>EUR</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>EUR</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+  <PaymentDetail>
+    <GroupingTag>B202200001-1</GroupingTag>
+    <BatchBooking>true</BatchBooking>
+    <PmtDocumentNum>102200000002</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>SEPA</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>2</TotalPayments>
+    <TotalAmount>250</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 2</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 2</PayeeName>
+      <PayeeAltName1 />
+      <TaxID></TaxID>
+      <PayeeType>Vendor</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 2 Address 1</AddLine1>
+        <AddLine2></AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 2 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 2 ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt2@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 2 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 2 Bank Num</BankNumber>
+      <BranchName>Payee Pmt 2 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT>PAYEEBICSWI</BICSWIFT>
+      <BranchNumber>Payee Pmt 2 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 2 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber></BankAccountNumber>
+      <IBAN>PT50222222222222222222222</IBAN>
+      <AccountType></AccountType>
+      <RoutingCode>
+        <ABA></ABA>
+        <CHIPS />
+        <RtgCode />
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 2 Bank Address 1</AddLine1>
+        <AddLine2 />
+        <AddLine3 />
+        <City>Payee Pmt 2 Bank City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 2 Bank ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>250</Value>
+      <Currency>EUR</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer />
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>EUR</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning />
+      <DisplayValue />
+    </PurpPayment>
+    <TotalPayableDocs>2</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100026</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>This is a dummy invoice</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning />
+        <DisplayValue />
+      </PurpPayment>
+      <DocAmount>
+        <Value>300</Value>
+        <Currency>EUR</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>24.00</Value>
+        <Currency>EUR</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>EUR</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+    <PayableDocuments>
+      <DocNumber>22/100027</DocNumber>
+      <DocType>CREN</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>This is a dummy credit memo</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning />
+        <DisplayValue />
+      </PurpPayment>
+      <DocAmount>
+        <Value>50</Value>
+        <Currency>EUR</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>50</Value>
+        <Currency>EUR</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>EUR</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+</PaymentBatch>

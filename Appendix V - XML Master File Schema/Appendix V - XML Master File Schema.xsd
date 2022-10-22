@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="PaymentBatch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PmtBatchDetails" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="GroupingElements" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="PaymentDetail" maxOccurs="unbounded">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PmtBatchDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PmtBatchCreationDate" minOccurs="1" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="PmtBatchRef" minOccurs="1" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="PmtBatchUserRef" minOccurs="0" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="BatchBooking" minOccurs="1" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="PmtBatchUserComments" minOccurs="0" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="BatchTotals" minOccurs="1" maxOccurs="1">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PmtBatchCreationDate" type="xs:dateTime" />
+  <xs:element name="PmtBatchRef">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PmtBatchUserRef" type="xs:string"></xs:element>
+  <xs:element name="PmtBatchUserComments" type="xs:string"></xs:element>
+  <xs:element name="BatchTotals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="NumPayments" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="TotalAmount" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="Total" maxOccurs="unbounded" minOccurs="1">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NumPayments" type="xs:integer"></xs:element>
+  <xs:element name="Total">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Amount" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="Currency" maxOccurs="1" minOccurs="1">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupingElements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PaymentDate" maxOccurs="1" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Payer" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="IntBankAccount" maxOccurs="1" minOccurs="1">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Payer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PayerName" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="TaxID" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PayerCompanyID" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PayerCompanyPrtry" minOccurs="0">
+        </xs:element>
+        <xs:element ref="RegistrationCode" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Address" maxOccurs="1" minOccurs="1">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayerName">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PayerCompanyID" type="xs:string"></xs:element>
+  <xs:element name="PayerCompanyPrtry" type="xs:string"></xs:element>
+  <xs:element name="RegistrationCode" type="xs:string"></xs:element>
+  <xs:element name="IntBankAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="BankName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankAccountName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankAccountNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="RoutingCode" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BICSWIFT" minOccurs="0">
+        </xs:element>
+        <xs:element ref="IBAN" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Currency">
+        </xs:element>
+        <xs:element ref="BankAddress">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="GroupingTag">
+        </xs:element>
+        <xs:element ref="BatchBooking">
+        </xs:element>
+        <xs:element ref="PmtDocumentNum">
+        </xs:element>
+        <xs:element ref="PaymentDate" minOccurs="1">
+        </xs:element>
+        <xs:element ref="PaymentMethod">
+        </xs:element>
+        <xs:element ref="PmtPriority">
+        </xs:element>
+        <xs:element ref="StructuredRem" minOccurs="1">
+        </xs:element>
+        <xs:element ref="TotalPayments">
+        </xs:element>
+        <xs:element ref="TotalAmount">
+        </xs:element>
+        <xs:element ref="RemittanceMessage" minOccurs="0">
+        </xs:element>
+        <xs:element ref="SpecialInstrBank" minOccurs="0">
+        </xs:element>
+        <xs:element ref="SpecialInstrSupp" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Payee">
+        </xs:element>
+        <xs:element ref="PayeeBankAccount">
+        </xs:element>
+        <xs:element ref="PaymentAmount">
+        </xs:element>
+        <xs:element ref="BankCharges" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PurpPayment" minOccurs="0">
+        </xs:element>
+        <xs:element ref="TotalPayableDocs">
+        </xs:element>
+        <xs:element ref="PayableDocuments" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupingTag">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PmtDocumentNum">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PaymentMethod">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="SEPA" />
+        <xs:pattern value="GLOBAL" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PmtPriority">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="NURG" />
+        <xs:enumeration value="URGP" />
+        <xs:enumeration value="BKTR" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="StructuredRem">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Y" />
+        <xs:enumeration value="N" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TotalPayments" type="xs:integer"></xs:element>
+  <xs:element name="RemittanceMessage" type="xs:string"></xs:element>
+  <xs:element name="SpecialInstrBank" type="xs:string"></xs:element>
+  <xs:element name="SpecialInstrSupp" type="xs:string"></xs:element>
+  <xs:element name="Payee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PayeeName">
+        </xs:element>
+        <xs:element ref="PayeeAltName1" minOccurs="0">
+        </xs:element>
+        <xs:element ref="TaxID" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PayeeType">
+        </xs:element>
+        <xs:element ref="Address">
+        </xs:element>
+        <xs:element ref="ContactDetails" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayeeName">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PayeeAltName1" type="xs:string"></xs:element>
+  <xs:element name="PayeeType">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Employee" />
+        <xs:enumeration value="Consultant" />
+        <xs:enumeration value="Pre-Employment" />
+        <xs:enumeration value="Vendor" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ContactDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PhoneNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Email" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhoneNumber" type="xs:string"></xs:element>
+  <xs:element name="Email" type="xs:string" />
+  <xs:element name="PayeeBankAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="BankName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankNameAlt" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchNameAlt" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BICSWIFT" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankAccountName">
+        </xs:element>
+        <xs:element ref="BankAccountNameAlt1" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankAccountNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="IBAN" minOccurs="0">
+        </xs:element>
+        <xs:element ref="AccountType" minOccurs="0">
+        </xs:element>
+        <xs:element ref="RoutingCode" maxOccurs="1" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankAddress" minOccurs="0">
+        </xs:element>
+        <xs:element ref="IntermediaryBankAccount1" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BankNameAlt" type="xs:string"></xs:element>
+  <xs:element name="BranchNameAlt" type="xs:string"></xs:element>
+  <xs:element name="BankAccountNameAlt1" type="xs:string"></xs:element>
+  <xs:element name="AccountType" type="xs:string"></xs:element>
+  <xs:element name="IntermediaryBankAccount1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="BankName" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BranchNumber" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BICSWIFT" minOccurs="0">
+        </xs:element>
+        <xs:element ref="RoutingCode" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Address" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PoPCode" type="xs:string"></xs:element>
+  <xs:element name="PoPMeaning" type="xs:string"></xs:element>
+  <xs:element name="DisplayValue" type="xs:string"></xs:element>
+  <xs:element name="TotalPayableDocs" type="xs:integer"></xs:element>
+  <xs:element name="PayableDocuments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DocNumber">
+        </xs:element>
+        <xs:element ref="DocType">
+        </xs:element>
+        <xs:element ref="CreditReference" minOccurs="0">
+        </xs:element>
+        <xs:element ref="DocDate">
+        </xs:element>
+        <xs:element ref="DocDueDate" minOccurs="0">
+        </xs:element>
+        <xs:element ref="DocDescription" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PurpPayment" minOccurs="0">
+        </xs:element>
+        <xs:element ref="DocAmount">
+        </xs:element>
+        <xs:element ref="PaymentAmount">
+        </xs:element>
+        <xs:element ref="DiscountTaken" minOccurs="0">
+        </xs:element>
+        <xs:element ref="BankCharges" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocDate" type="xs:date"></xs:element>
+  <xs:element name="DocDueDate" type="xs:date"></xs:element>
+  <xs:element name="DocDescription" type="xs:string"></xs:element>
+  <xs:element name="PurpPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="PoPCode">
+        </xs:element>
+        <xs:element minOccurs="0" ref="PoPMeaning">
+        </xs:element>
+        <xs:element minOccurs="0" ref="DisplayValue">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocAmount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Value">
+        </xs:element>
+        <xs:element ref="Currency">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiscountTaken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Value" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Currency" minOccurs="0">
+        </xs:element>
+        <xs:element ref="DiscountDate" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiscountDate">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:date" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="BatchBooking">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="true" />
+        <xs:enumeration value="false" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TotalAmount" type="xs:decimal"></xs:element>
+  <xs:element name="Amount" type="xs:decimal"></xs:element>
+  <xs:element name="Currency">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[A-Z]{3,3}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PaymentDate" nillable="false">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:date" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TaxID" type="xs:string"></xs:element>
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="AddressName">
+        </xs:element>
+        <xs:element ref="AddLine1">
+        </xs:element>
+        <xs:element ref="AddLine2" minOccurs="0">
+        </xs:element>
+        <xs:element ref="AddLine3" minOccurs="0">
+        </xs:element>
+        <xs:element ref="City">
+        </xs:element>
+        <xs:element ref="State" maxOccurs="1" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PostalCode" maxOccurs="1" minOccurs="1">
+        </xs:element>
+        <xs:element ref="Country2Digit" minOccurs="0">
+        </xs:element>
+        <xs:element ref="Country3Digit" minOccurs="0" maxOccurs="1">
+        </xs:element>
+        <xs:element ref="CountryName" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddressName" type="xs:string"></xs:element>
+  <xs:element name="BankName" type="xs:string"></xs:element>
+  <xs:element name="BankNumber" type="xs:string"></xs:element>
+  <xs:element name="BranchName" type="xs:string"></xs:element>
+  <xs:element name="BranchNumber" type="xs:string"></xs:element>
+  <xs:element name="BankAccountName">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="BankAccountNumber" type="xs:string"></xs:element>
+  <xs:element name="RoutingCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" ref="ABA">
+        </xs:element>
+        <xs:element minOccurs="0" ref="CHIPS">
+        </xs:element>
+        <xs:element minOccurs="0" name="RtgCode" type="xs:string">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ABA">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[0-9]{9,9}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CHIPS">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[0-9]{4,4}([0-9]{2,2}){0,1}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="BICSWIFT">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[A-Z]{6,6}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="IBAN" type="xs:string"></xs:element>
+  <xs:element name="BankAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="AddLine1">
+        </xs:element>
+        <xs:element ref="AddLine2" minOccurs="0">
+        </xs:element>
+        <xs:element ref="AddLine3" minOccurs="0">
+        </xs:element>
+        <xs:element ref="City">
+        </xs:element>
+        <xs:element ref="State" minOccurs="0">
+        </xs:element>
+        <xs:element ref="PostalCode">
+        </xs:element>
+        <xs:element ref="Country2Digit">
+        </xs:element>
+        <xs:element ref="Country3Digit" minOccurs="0">
+        </xs:element>
+        <xs:element ref="CountryName" minOccurs="0">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentAmount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Value">
+        </xs:element>
+        <xs:element ref="Currency">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BankCharges">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="ChargeBearer" minOccurs="0">
+          </xs:element>
+          <xs:element ref="ChargesAmount" minOccurs="0">
+          </xs:element>
+          <xs:element minOccurs="0" ref="Currency">
+          </xs:element>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChargeBearer">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ChargesAmount">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DocNumber">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DocType">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="CINV" />
+        <xs:enumeration value="CREN" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CreditReference" type="xs:string"></xs:element>
+  <xs:element name="Value">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="AddLine1" type="xs:string" />
+  <xs:element name="AddLine2" type="xs:string"></xs:element>
+  <xs:element name="AddLine3" type="xs:string"></xs:element>
+  <xs:element name="City">
+    <xs:simpleType>
+      <xs:restriction base="xs:string" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="State" type="xs:string"></xs:element>
+  <xs:element name="PostalCode">
+    <xs:simpleType>
+      <xs:restriction base="xs:string" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Country2Digit">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[A-Z]{2,2}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Country3Digit">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^$|[A-Z]{3,3}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CountryName" type="xs:string"></xs:element>
+</xs:schema>

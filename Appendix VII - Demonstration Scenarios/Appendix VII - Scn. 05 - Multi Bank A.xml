@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="template_modified.xsl"?>
+<PaymentBatch>
+  <PmtBatchDetails>
+    <PmtBatchCreationDate>2022-10-01T11:46:54</PmtBatchCreationDate>
+    <PmtBatchRef>B202200001</PmtBatchRef>
+    <PmtBatchUserRef>20221001BANKAGLOBAL</PmtBatchUserRef>
+    <BatchBooking>false</BatchBooking>
+    <PmtBatchUserComments>Test - Bank A Multiple destinations and currencies, unstructured remittance, no batch booking</PmtBatchUserComments>
+    <BatchTotals>
+      <NumPayments>4</NumPayments>
+      <TotalAmount>6000.00</TotalAmount>
+      <Total>
+        <Amount>2000.00</Amount>
+        <Currency>AUD</Currency>
+      </Total>
+      <Total>
+        <Amount>3000.00</Amount>
+        <Currency>GBP</Currency>
+      </Total>
+      <Total>
+        <Amount>1000.00</Amount>
+        <Currency>EUR</Currency>
+      </Total>
+    </BatchTotals>
+  </PmtBatchDetails>
+  <GroupingElements>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <Payer>
+      <PayerName>Demo Company Name</PayerName>
+      <TaxID>Demo Tax ID</TaxID>
+      <PayerCompanyID>Demo Company ID</PayerCompanyID>
+      <PayerCompanyPrtry>Demo Company Code for Bank B</PayerCompanyPrtry>
+      <RegistrationCode>Organization Code</RegistrationCode>
+      <Address>
+        <AddressName>Payer Address Name</AddressName>
+        <AddLine1>Payer Address Line 1</AddLine1>
+        <AddLine2>Payer Address Line 2</AddLine2>
+        <AddLine3>Payer Address Line 3</AddLine3>
+        <City>Payer City</City>
+        <State>Payer State</State>
+        <PostalCode>Payer ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </Address>
+    </Payer>
+    <IntBankAccount>
+      <BankName>Bank A</BankName>
+      <BankNumber>Bank Number</BankNumber>
+      <BranchName>Branch Name</BranchName>
+      <BranchNumber>Branch Number</BranchNumber>
+      <BankAccountName>Bank A - EU</BankAccountName>
+      <BankAccountNumber>000000000</BankAccountNumber>
+      <RoutingCode>
+        <ABA></ABA>
+        <CHIPS />
+        <RtgCode></RtgCode>
+      </RoutingCode>
+      <BICSWIFT>XXXXPTXXXXX</BICSWIFT>
+      <IBAN></IBAN>
+      <Currency>EUR</Currency>
+      <BankAddress>
+        <AddLine1>Payer Bank Address 1</AddLine1>
+        <AddLine2>Payer Bank Address 1</AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payer Bank City</City>
+        <State></State>
+        <PostalCode>Payer Bank ZIP</PostalCode>
+        <Country2Digit>PT</Country2Digit>
+        <Country3Digit>POR</Country3Digit>
+        <CountryName>Portugal</CountryName>
+      </BankAddress>
+    </IntBankAccount>
+  </GroupingElements>
+  <PaymentDetail>
+    <GroupingTag>B202200001-1</GroupingTag>
+    <BatchBooking>false</BatchBooking>
+    <PmtDocumentNum>102200000001</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>GLOBAL</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>1</TotalPayments>
+    <TotalAmount>2000.00</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 1</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 1</PayeeName>
+      <PayeeAltName1></PayeeAltName1>
+      <TaxID>Payee Pmt 1 Tax ID</TaxID>
+      <PayeeType>Employee</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 1 Address 1</AddLine1>
+        <AddLine2>Payee Pmt 1 Address 2</AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 1 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 1 ZIP</PostalCode>
+        <Country2Digit>AU</Country2Digit>
+        <Country3Digit>AUS</Country3Digit>
+        <CountryName>Australia</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt1@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 1 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 1 Bank Number</BankNumber>
+      <BranchName>Payee Pmt 1 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT></BICSWIFT>
+      <BranchNumber>Payee Pmt 1 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 1 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber>1111111</BankAccountNumber>
+      <IBAN></IBAN>
+      <AccountType></AccountType>
+      <RoutingCode>
+        <ABA />
+        <CHIPS />
+        <RtgCode>XXXXXX</RtgCode>
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 1 Bank Address 1</AddLine1>
+        <AddLine2>Payee Pmt 1 Bank Address 2</AddLine2>
+        <AddLine3 />
+        <City>Payee Pmt 1 Bank City</City>
+        <State></State>
+        <PostalCode>Payee 1 Bank ZIP</PostalCode>
+        <Country2Digit>AU</Country2Digit>
+        <Country3Digit>AUS</Country3Digit>
+        <CountryName>Australia</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>2000.00</Value>
+      <Currency>AUD</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer>SHAR</ChargeBearer>
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>AUD</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning />
+      <DisplayValue />
+    </PurpPayment>
+    <TotalPayableDocs>1</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100024</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>Test invoice 1</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning />
+        <DisplayValue></DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>2000.00</Value>
+        <Currency>AUD</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>2000.00</Value>
+        <Currency>AUD</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>AUD</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+  <PaymentDetail>
+    <GroupingTag>B202200001-2</GroupingTag>
+    <BatchBooking>false</BatchBooking>
+    <PmtDocumentNum>102200000002</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>GLOBAL</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>1</TotalPayments>
+    <TotalAmount>2000.00</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 2</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 2</PayeeName>
+      <PayeeAltName1 />
+      <TaxID></TaxID>
+      <PayeeType>Vendor</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 2 Address 1</AddLine1>
+        <AddLine2></AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 2 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 2 ZIP</PostalCode>
+        <Country2Digit>JE</Country2Digit>
+        <Country3Digit>JEY</Country3Digit>
+        <CountryName>Jersey</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt2@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 2 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 2 Bank Num</BankNumber>
+      <BranchName>Payee Pmt 2 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT>PAYEEBICSWI</BICSWIFT>
+      <BranchNumber>Payee Pmt 2 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 2 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber>2222222</BankAccountNumber>
+      <IBAN></IBAN>
+      <AccountType>Savings</AccountType>
+      <RoutingCode>
+        <ABA></ABA>
+        <CHIPS />
+        <RtgCode>YYYYYYYYY</RtgCode>
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 2 Bank Address 1</AddLine1>
+        <AddLine2 />
+        <AddLine3 />
+        <City>Payee Pmt 2 Bank City</City>
+        <State></State>
+        <PostalCode>Payee 2 Bank ZIP</PostalCode>
+        <Country2Digit>JE</Country2Digit>
+        <Country3Digit>JEY</Country3Digit>
+        <CountryName>Jersey</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>2000.00</Value>
+      <Currency>GBP</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer />
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>GBP</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+      <DisplayValue>Purpose of Payment Demo</DisplayValue>
+    </PurpPayment>
+    <TotalPayableDocs>1</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100026</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>This is a dummy invoice</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+        <DisplayValue>Purpose of Payment Demo</DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>2000.00</Value>
+        <Currency>GBP</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>2000.00</Value>
+        <Currency>GBP</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>GBP</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+  <PaymentDetail>
+    <GroupingTag>B202200001-3</GroupingTag>
+    <BatchBooking>false</BatchBooking>
+    <PmtDocumentNum>102200000003</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>GLOBAL</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>1</TotalPayments>
+    <TotalAmount>1000.00</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 3</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 3</PayeeName>
+      <PayeeAltName1 />
+      <TaxID></TaxID>
+      <PayeeType>Vendor</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 3 Address 1</AddLine1>
+        <AddLine2></AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 3 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 3 ZIP</PostalCode>
+        <Country2Digit>CI</Country2Digit>
+        <Country3Digit>CIV</Country3Digit>
+        <CountryName>Ivory Coast</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt2@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 3 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 3 Bank Num</BankNumber>
+      <BranchName>Payee Pmt 3 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT>PAYEEBICSWI</BICSWIFT>
+      <BranchNumber>Payee Pmt 3 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 3 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber></BankAccountNumber>
+      <IBAN>CI33333333333333333333333</IBAN>
+      <AccountType></AccountType>
+      <RoutingCode>
+        <ABA></ABA>
+        <CHIPS />
+        <RtgCode></RtgCode>
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 3 Bank Address 1</AddLine1>
+        <AddLine2 />
+        <AddLine3 />
+        <City>Payee Pmt 3 Bank City</City>
+        <State></State>
+        <PostalCode>Payee 3 Bank ZIP</PostalCode>
+        <Country2Digit>CI</Country2Digit>
+        <Country3Digit>CIV</Country3Digit>
+        <CountryName>Ivory Coast</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>1000.00</Value>
+      <Currency>GBP</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer />
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>GBP</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+      <DisplayValue>Purpose of Payment Demo</DisplayValue>
+    </PurpPayment>
+    <TotalPayableDocs>1</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100027</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>This is a dummy invoice</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+        <DisplayValue>Purpose of Payment Demo</DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>1000.00</Value>
+        <Currency>GBP</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>1000.00</Value>
+        <Currency>GBP</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>GBP</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+  <PaymentDetail>
+    <GroupingTag>B202200001-4</GroupingTag>
+    <BatchBooking>false</BatchBooking>
+    <PmtDocumentNum>102200000004</PmtDocumentNum>
+    <PaymentDate>2022-10-01</PaymentDate>
+    <PaymentMethod>GLOBAL</PaymentMethod>
+    <PmtPriority>NURG</PmtPriority>
+    <StructuredRem>N</StructuredRem>
+    <TotalPayments>1</TotalPayments>
+    <TotalAmount>1000.00</TotalAmount>
+    <RemittanceMessage>Remittance Message Pmt 4</RemittanceMessage>
+    <SpecialInstrBank />
+    <SpecialInstrSupp />
+    <Payee>
+      <PayeeName>Payee Pmt 3</PayeeName>
+      <PayeeAltName1 />
+      <TaxID></TaxID>
+      <PayeeType>Vendor</PayeeType>
+      <Address>
+        <AddLine1>Payee Pmt 3 Address 1</AddLine1>
+        <AddLine2></AddLine2>
+        <AddLine3></AddLine3>
+        <City>Payee Pmt 3 City</City>
+        <State></State>
+        <PostalCode>Payee Pmt 3 ZIP</PostalCode>
+        <Country2Digit>AZ</Country2Digit>
+        <Country3Digit>AZE</Country3Digit>
+        <CountryName>Azerbaijan</CountryName>
+      </Address>
+      <ContactDetails>
+        <PhoneNumber>+351 960000000</PhoneNumber>
+        <Email>PayeePmt2@email.com</Email>
+      </ContactDetails>
+    </Payee>
+    <PayeeBankAccount>
+      <BankName>Payee Pmt 4 Bank Name</BankName>
+      <BankNameAlt />
+      <BankNumber>Payee Pmt 4 Bank Num</BankNumber>
+      <BranchName>Payee Pmt 4 Branch Name</BranchName>
+      <BranchNameAlt />
+      <BICSWIFT>PAYEEBICSWI</BICSWIFT>
+      <BranchNumber>Payee Pmt 4 Branch Num</BranchNumber>
+      <BankAccountName>Payee Pmt 4 Bank Acct Name</BankAccountName>
+      <BankAccountNameAlt1></BankAccountNameAlt1>
+      <BankAccountNumber></BankAccountNumber>
+      <IBAN>AZ4444444444444444444444444</IBAN>
+      <AccountType></AccountType>
+      <RoutingCode>
+        <ABA></ABA>
+        <CHIPS />
+        <RtgCode></RtgCode>
+      </RoutingCode>
+      <BankAddress>
+        <AddLine1>Payee Pmt 4 Bank Address 1</AddLine1>
+        <AddLine2 />
+        <AddLine3 />
+        <City>Payee Pmt 4 Bank City</City>
+        <State></State>
+        <PostalCode>Payee 4 Bank ZIP</PostalCode>
+        <Country2Digit>AZ</Country2Digit>
+        <Country3Digit>AZE</Country3Digit>
+        <CountryName>Azerbaijan</CountryName>
+      </BankAddress>
+      <IntermediaryBankAccount1>
+        <BankName></BankName>
+        <BranchNumber></BranchNumber>
+        <BICSWIFT></BICSWIFT>
+        <RoutingCode>
+          <ABA></ABA>
+          <CHIPS></CHIPS>
+          <RtgCode />
+        </RoutingCode>
+        <Address>
+          <AddLine1></AddLine1>
+          <AddLine2></AddLine2>
+          <AddLine3 />
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country2Digit></Country2Digit>
+          <Country3Digit />
+          <CountryName />
+        </Address>
+      </IntermediaryBankAccount1>
+    </PayeeBankAccount>
+    <PaymentAmount>
+      <Value>1000.00</Value>
+      <Currency>EUR</Currency>
+    </PaymentAmount>
+    <BankCharges>
+      <ChargeBearer />
+      <ChargesAmount>0</ChargesAmount>
+      <Currency>EUR</Currency>
+    </BankCharges>
+    <PurpPayment>
+      <PoPCode />
+      <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+      <DisplayValue>Purpose of Payment Demo</DisplayValue>
+    </PurpPayment>
+    <TotalPayableDocs>1</TotalPayableDocs>
+    <PayableDocuments>
+      <DocNumber>22/100028</DocNumber>
+      <DocType>CINV</DocType>
+      <CreditReference />
+      <DocDate>2022-03-10</DocDate>
+      <DocDueDate>2022-04-11</DocDueDate>
+      <DocDescription>This is a dummy invoice</DocDescription>
+      <PurpPayment>
+        <PoPCode />
+        <PoPMeaning>Purpose of Payment Demo</PoPMeaning>
+        <DisplayValue>Purpose of Payment Demo</DisplayValue>
+      </PurpPayment>
+      <DocAmount>
+        <Value>1000.00</Value>
+        <Currency>EUR</Currency>
+      </DocAmount>
+      <PaymentAmount>
+        <Value>1000.00</Value>
+        <Currency>EUR</Currency>
+      </PaymentAmount>
+      <DiscountTaken>
+        <Value>0</Value>
+        <Currency>EUR</Currency>
+        <DiscountDate />
+      </DiscountTaken>
+      <BankCharges>
+        <ChargeBearer />
+        <ChargesAmount />
+        <Currency />
+      </BankCharges>
+    </PayableDocuments>
+  </PaymentDetail>
+</PaymentBatch>

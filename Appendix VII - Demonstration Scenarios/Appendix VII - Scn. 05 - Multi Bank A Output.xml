@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>B202200001</MsgId>
+			<CreDtTm>2022-10-01T11:46:54</CreDtTm>
+			<NbOfTxs>4</NbOfTxs>
+			<CtrlSum>6000.00</CtrlSum>
+			<InitgPty>
+				<Nm>DEMO COMPANY NAME</Nm>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>B202200001-1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>2000.00</CtrlSum>
+			<ReqdExctnDt>2022-10-01</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEMO COMPANY NAME</Nm>
+				<PstlAdr>
+					<StrtNm>PAYER ADDRESS LINE 1, PAYER ADDRESS LINE 2</StrtNm>
+					<PstCd>PAYER ZIP</PstCd>
+					<TwnNm>PAYER CITY</TwnNm>
+					<Ctry>PT</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>Demo Tax ID</Id>
+							<SchmeNm>
+								<Cd>TXID</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>000000000</Id>
+					</Othr>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>XXXXPTXXXXX</BIC>
+					<PstlAdr>
+						<StrtNm>PAYER BANK ADDRESS 1, PAYER BANK ADDRESS 1</StrtNm>
+						<PstCd>PAYER BANK ZIP</PstCd>
+						<TwnNm>PAYER BANK CITY</TwnNm>
+						<Ctry>PT</Ctry>
+					</PstlAdr>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>102200000001</InstrId>
+					<EndToEndId>102200000001</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<SvcLvl>
+						<Cd>NURG</Cd>
+					</SvcLvl>
+					<CtgyPurp>
+						<Cd>SALA</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="AUD">2000.00</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<Cdtr>
+					<Nm>PAYEE PMT 1 BANK ACCT NAME</Nm>
+					<PstlAdr>
+						<StrtNm>PAYEE PMT 1 ADDRESS 1, PAYEE PMT 1 ADDRESS 2</StrtNm>
+						<PstCd>PAYEE PMT 1 ZIP</PstCd>
+						<TwnNm>PAYEE PMT 1 CITY</TwnNm>
+						<Ctry>AU</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>XXXXXX1111111</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>22/100024;2000.00;2000.00;Payment for Goods and Services|</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>B202200001-2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>2000.00</CtrlSum>
+			<ReqdExctnDt>2022-10-01</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEMO COMPANY NAME</Nm>
+				<PstlAdr>
+					<StrtNm>PAYER ADDRESS LINE 1, PAYER ADDRESS LINE 2</StrtNm>
+					<PstCd>PAYER ZIP</PstCd>
+					<TwnNm>PAYER CITY</TwnNm>
+					<Ctry>PT</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>Demo Tax ID</Id>
+							<SchmeNm>
+								<Cd>TXID</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>000000000</Id>
+					</Othr>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>XXXXPTXXXXX</BIC>
+					<PstlAdr>
+						<StrtNm>PAYER BANK ADDRESS 1, PAYER BANK ADDRESS 1</StrtNm>
+						<PstCd>PAYER BANK ZIP</PstCd>
+						<TwnNm>PAYER BANK CITY</TwnNm>
+						<Ctry>PT</Ctry>
+					</PstlAdr>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>102200000002</InstrId>
+					<EndToEndId>102200000002</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<SvcLvl>
+						<Cd>NURG</Cd>
+					</SvcLvl>
+					<CtgyPurp>
+						<Cd>SUPP</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="GBP">2000.00</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>PAYEEBICSWI</BIC>
+						<Nm>PAYEE PMT 2 BANK NAME - PAYEE PMT 2 BRANCH NUM / PAYEE PMT 2 BANK ADDRESS 1, , PAYEE PMT 2 BANK CITY, PAYEE 2 BANK ZIP, JERSEY</Nm>
+						<PstlAdr>
+							<StrtNm>PAYEE PMT 2 BANK ADDRESS 1</StrtNm>
+							<PstCd>PAYEE 2 BANK ZIP</PstCd>
+							<TwnNm>PAYEE PMT 2 BANK CITY</TwnNm>
+							<Ctry>JE</Ctry>
+						</PstlAdr>
+						<Othr>
+							<Id>YYYYYYYYY</Id>
+							<SchmeNm>
+								<Prtry>JE</Prtry>
+							</SchmeNm>
+						</Othr>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>PAYEE PMT 2 BANK ACCT NAME</Nm>
+					<PstlAdr>
+						<StrtNm>PAYEE PMT 2 ADDRESS 1</StrtNm>
+						<PstCd>PAYEE PMT 2 ZIP</PstCd>
+						<TwnNm>PAYEE PMT 2 CITY</TwnNm>
+						<Ctry>JE</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>YYYYYYYYY2222222</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>22/100026;2000.00;2000.00;Purpose of Payment Demo|</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>B202200001-3</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>1000.00</CtrlSum>
+			<ReqdExctnDt>2022-10-01</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEMO COMPANY NAME</Nm>
+				<PstlAdr>
+					<StrtNm>PAYER ADDRESS LINE 1, PAYER ADDRESS LINE 2</StrtNm>
+					<PstCd>PAYER ZIP</PstCd>
+					<TwnNm>PAYER CITY</TwnNm>
+					<Ctry>PT</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>Demo Tax ID</Id>
+							<SchmeNm>
+								<Cd>TXID</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>000000000</Id>
+					</Othr>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>XXXXPTXXXXX</BIC>
+					<PstlAdr>
+						<StrtNm>PAYER BANK ADDRESS 1, PAYER BANK ADDRESS 1</StrtNm>
+						<PstCd>PAYER BANK ZIP</PstCd>
+						<TwnNm>PAYER BANK CITY</TwnNm>
+						<Ctry>PT</Ctry>
+					</PstlAdr>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>102200000003</InstrId>
+					<EndToEndId>102200000003</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<SvcLvl>
+						<Cd>NURG</Cd>
+					</SvcLvl>
+					<CtgyPurp>
+						<Cd>SUPP</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="GBP">1000.00</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>PAYEEBICSWI</BIC>
+						<Nm>PAYEE PMT 3 BANK NAME - PAYEE PMT 3 BRANCH NUM / PAYEE PMT 3 BANK ADDRESS 1, , PAYEE PMT 3 BANK CITY, PAYEE 3 BANK ZIP, IVORY COAST</Nm>
+						<PstlAdr>
+							<StrtNm>PAYEE PMT 3 BANK ADDRESS 1</StrtNm>
+							<PstCd>PAYEE 3 BANK ZIP</PstCd>
+							<TwnNm>PAYEE PMT 3 BANK CITY</TwnNm>
+							<Ctry>CI</Ctry>
+						</PstlAdr>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>PAYEE PMT 3 BANK ACCT NAME</Nm>
+					<PstlAdr>
+						<StrtNm>PAYEE PMT 3 ADDRESS 1</StrtNm>
+						<PstCd>PAYEE PMT 3 ZIP</PstCd>
+						<TwnNm>PAYEE PMT 3 CITY</TwnNm>
+						<Ctry>CI</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>CI33333333333333333333333</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<InstrForDbtrAgt>+351 960000000 PAYEEPMT2@EMAIL.COM</InstrForDbtrAgt>
+				<RmtInf>
+					<Ustrd>22/100027;1000.00;1000.00;Purpose of Payment Demo|</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>B202200001-4</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>1000.00</CtrlSum>
+			<ReqdExctnDt>2022-10-01</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEMO COMPANY NAME</Nm>
+				<PstlAdr>
+					<StrtNm>PAYER ADDRESS LINE 1, PAYER ADDRESS LINE 2</StrtNm>
+					<PstCd>PAYER ZIP</PstCd>
+					<TwnNm>PAYER CITY</TwnNm>
+					<Ctry>PT</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>Demo Tax ID</Id>
+							<SchmeNm>
+								<Cd>TXID</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>000000000</Id>
+					</Othr>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>XXXXPTXXXXX</BIC>
+					<PstlAdr>
+						<StrtNm>PAYER BANK ADDRESS 1, PAYER BANK ADDRESS 1</StrtNm>
+						<PstCd>PAYER BANK ZIP</PstCd>
+						<TwnNm>PAYER BANK CITY</TwnNm>
+						<Ctry>PT</Ctry>
+					</PstlAdr>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>102200000004</InstrId>
+					<EndToEndId>102200000004</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<SvcLvl>
+						<Cd>NURG</Cd>
+					</SvcLvl>
+					<CtgyPurp>
+						<Cd>SUPP</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="EUR">1000.00</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>PAYEEBICSWI</BIC>
+						<Nm>PAYEE PMT 4 BANK NAME - PAYEE PMT 4 BRANCH NUM / PAYEE PMT 4 BANK ADDRESS 1, , PAYEE PMT 4 BANK CITY, PAYEE 4 BANK ZIP, AZERBAIJAN</Nm>
+						<PstlAdr>
+							<StrtNm>PAYEE PMT 4 BANK ADDRESS 1</StrtNm>
+							<PstCd>PAYEE 4 BANK ZIP</PstCd>
+							<TwnNm>PAYEE PMT 4 BANK CITY</TwnNm>
+							<Ctry>AZ</Ctry>
+						</PstlAdr>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>PAYEE PMT 4 BANK ACCT NAME</Nm>
+					<PstlAdr>
+						<StrtNm>PAYEE PMT 3 ADDRESS 1</StrtNm>
+						<PstCd>PAYEE PMT 3 ZIP</PstCd>
+						<TwnNm>PAYEE PMT 3 CITY</TwnNm>
+						<Ctry>AZ</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>AZ4444444444444444444444444</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>22/100028;1000.00;1000.00;Purpose of Payment Demo|</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>
